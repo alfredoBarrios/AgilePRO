@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Agile Pro|
+        {% block title %}{% endblock %}</title>
+        <P  ALIGN="Right"> Usuario:  {{ user.username }}</p>
+        <P ALIGN="Right"> <a href="/logout/">Cerrar Sesión</a> </p>
+    </head>
+    <body>
+        <h1>{% block head %}{% endblock %}</h1>
+        {% block content %}{% endblock %}
+ 
+    </body>
+</html>

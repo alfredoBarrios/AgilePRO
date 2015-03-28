@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Administración{% endblock %}
+{% block head %}Módulo de Administración{% endblock %}
+{% block content %}
+
+	<FORM METHOD="post" ACTION="."> {% csrf_token %}
+	 	<INPUT TYPE="button" onclick="location.href='gestionarRoles'" VALUE="Gestionar Rol" name=boton1 style='width:150px; height:25px'> 
+	</FORM>		
+
+{% endblock %}

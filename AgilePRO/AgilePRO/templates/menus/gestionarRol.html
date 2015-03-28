@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Gestionar Rol{% endblock %}
+{% block head %}Gestionar Rol{% endblock %}
+{% block content %}
+	
+	<form method="post" action="."> {% csrf_token %}
+		<input type="hidden" name="next" value="/home/gestionarRol/crearRol" />
+	</form>
+	
+		
+
+{% endblock %}
