@@ -1,11 +1,9 @@
 """
-Django settings for AgilePRO project.
+Configuraciones Para el Proyecto AgilePRO.
 
-For more information on this file, see
-https://docs.djangoproject.com/en/1.7/topics/settings/
+Archivo de Configuraciones para el proyecto,  aqui se incluyen , las app's instaladas
+la configuracionn de la base de datos, la configuracion de idiomas, etc.
 
-For the full list of settings and their values, see
-https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -14,15 +12,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 AUTH_PROFILE_MODULE='usuarioExtendido.usuario'
 
-# Quick-start development settings - unsuitable for production
+#Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'yt9=zq$xyq#ir%q0#2v4@e^2f5ti80q^hq$%rp_38c+y#5-di4'
 
+SECRET_KEY = 'yt9=zq$xyq#ir%q0#2v4@e^2f5ti80q^hq$%rp_38c+y#5-di4'
+#SECURITY WARNING: keep the secret key used in production secret!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+"""Modo de debug true para desarrollo false para produccion"""
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -68,7 +66,7 @@ DATABASES = {
         'HOST': ''
     }
 }
-
+"""Configuaracion de la coneccion con la base de datos"""
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
